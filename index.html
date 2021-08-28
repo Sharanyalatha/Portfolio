@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+   <script src="./main.js" async></script>
+</head>
+<body>
+    <!-- <header>
+        <div id="portfolio">Sharanya Muralidharan K</div>
+        
+            <nav class="site-nav">
+                <a href="#about-nav">About</a>
+                <a href="#experience-nav">Experience</a>
+                <a href="#contact">Contact</a>
+       </nav>
+       
+    </header> -->
+    <nav>
+        <input type="checkbox" id="check" onclick = "addPanel()">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo">Portfolio</label>
+        <ul id="menuOff">
+            <li onclick = "removePanelHome()"><a>Home</a></li>
+            <li onclick = "removePanelAbout()"><a>About</a></li>
+            <li onclick = "removePanelExp()"> <a>Experience</a></li>
+            <li onclick = "removePanelContact()"><a>Contact</a></li>
+        </ul>
+        <script> 
+            function removePanelHome() {
+                if (document.getElementById('menuOn')) {
+                    document.getElementById('menuOn').id = 'menuOff'
+                }
+                window.location = "#home-sec";
+            }
+            function removePanelAbout() {
+                if (document.getElementById('menuOn')) {
+                    document.getElementById('menuOn').id = 'menuOff'
+                }
+                window.location = "#about-nav";
+            }
+            function removePanelExp() {
+                if (document.getElementById('menuOn')) {
+                    document.getElementById('menuOn').id = 'menuOff'
+                }
+                window.location = "#experience";
+
+            }
+            function removePanelContact() {
+                if (document.getElementById('menuOn')) {
+                    document.getElementById('menuOn').id = 'menuOff'
+                }
+                window.location = "#contact";
+
+            }
+            function addPanel() {
+                if (document.getElementById('menuOff')) {
+                    document.getElementById('menuOff').id = 'menuOn'
+                } else {
+                    document.getElementById('menuOn').id = 'menuOff'
+                }
+            }
+        </script> 
+    </nav>
+
+    <!-- <div id="home">
+       
+        <div id="photo">
+        <img id="myphoto" src="./New doc 26 Aug 2021 11.58 am.jpg" alt="photo">
+    </div>
+    <div id="description">Hi! I am Sharanya Muralidharan K, currently studying in NSS COLLEGE OF ENGINEERING, PALAKKAD.I am computer science and engineering second year student.I have a great interest to study web designing and development.Also I am very much interested to study programming languages.</div>
+    </div> -->
+    <div id="home-sec"> 
+
+    </div>
+    <div id="homeDiv">
+   
+      <!-- <div id="photo">
+        <img id="myphoto" src="./New doc 26 Aug 2021 11.58 am.jpg" alt="photo">
+    </div> -->
+    <div id="name-sec"><h1>Sharanya Muralidharan K</h1></div>
+    <div id="profile-desc"><h1>Computer Science & Engineering Student</h1></div>
+
+
+    </div>
+    <div id="about-nav"> 
+
+    </div>
+    <div id="aboutme">
+      <h1><span id="under">About me</span></h1>
+      <!-- <div id="skills">
+          <div id="technical">
+              <div class="subhead"><div id="coding">TECHNICAL SKILLS</div> </div>
+              
+              <div class="contents">
+              <ul>
+                  <li>Programming languages: C, Java, Python, HTML, CSS, JavaScript</li>
+                  <li>Operating system: Microsoft Windows, Ubuntu</li>
+              </ul>
+            </div>
+            
+          </div>
+          <div id="others">
+              <div class="subhead" id="hobbies">HOBBIES, INTERESTS AND PERSONAL SKILLS</div>
+              <div class="contents">
+               <ul><li>Dancing</li><li>Writing</li><li>Cycling</li><li>Team work & Collaboration</li><li>Communication</li></ul>
+              </div>
+          </div>
+
+      </div> -->
+      <div id="photo">
+        <img id="myphoto" src="./New doc 26 Aug 2021 11.58 am.jpg" alt="photo">
+    </div>
+    <div id="description">Hi! I am Sharanya Muralidharan K, currently studying in NSS COLLEGE OF ENGINEERING, PALAKKAD. I am computer science and engineering second year student. I have a great interest to study web designing and development. Also I am very much interested to study programming languages.</div>
+<div id="skills">
+    <div id="technical">
+        <h2>My skills</h2>
+        <li>
+            <h3>HTML5</h3><span class="bar"><span class="html"></span></span>
+        </li>
+        <li>
+            <h3>CSS</h3><span class="bar"><span class="css"></span></span>
+        </li>
+        <li>
+            <h3>JAVASCRIPT</h3><span class="bar"><span class="js"></span></span>
+        </li>
+        <li>
+            <h3>JAVA</h3><span class="bar"><span class="java"></span></span>
+        </li>
+    </div>
+    <div id="others">
+        <h2>Hobbies & Personal Interests</h2>
+        <ul><li>Dancing</li><li>Writing</li><li>Cycling</li><li>Team work & Collaboration</li><li>Communication</li></ul>
+    </div>
+</div>
+
+    </div>
+ <!-- <div id="experience-nav">
+ </div> -->
+    <div id="experience">
+        <h1><span id="under">Experience</span></h1>
+        <div class="exp-wrap">
+        <div id="webdev">
+            Web App Developer Intern at Inventrom Private Limited – Bolt IoT
+        </div>
+        <div id="ptib">
+            Student coordinator at PTIB NSSCE
+        </div>
+        <div id="goit">
+            Student representative of TCS' goIT
+            Digital Innovation Program
+        </div>
+    </div>
+
+    </div>
+    <div id="contact">
+        <h1><span id="under">Get in touch</span></h1>
+        <div id="left-section">
+            <div class="icon-styles"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+            <span id="address">Souparnika, <br>Paingattuparamba <br> Vallikkunnu <br>Pantheerankavu<br>calicut<br>Pincode:673019</span>
+        </div>
+       <div id="right-section">
+           <div class="phone">
+       <div class="icon-styles"><i class="fa fa-phone"></i></div>
+       <div class="contact-content">(+91)8943043274</div>
+    </div>
+    <div class="mail">
+      <div class="icon-styles"><i class="fa fa-envelope"></i></div>
+      <div class="contact-content">muralisharanya63@gmail.com</div>
+    </div>
+       </div>
+        </div>
+        <span class="scroll-to-top">
+            <span><img src="./white-arrow.svg" alt=""></span>
+          </span>
+  <!-- <button class="scroll-to-top"><i class="fas fa-angle-up"></i></button> -->
+  <!-- <script src="./main.js" async></script> -->
+    <footer class="site-footer">
+        <div class="footer-contents">
+            <div class="copy"> 
+                Copyright &#169; 2021 All Rights Reserved
+            </div>
+            <div class="icons">
+         <span class="icon-styles spacing remove-blue"><a href="https://www.facebook.com/sharanya.muralidharan.58" target="_blank"><i class="fa fa-facebook-square"></i></a></span>
+        <span class="icon-styles spacing remove-blue"> <a href="https://www.linkedin.com/in/sharanya-muralidharan-k-9618601b2" target="_blank"><i class="fa fa-linkedin"></i></a></span>
+        <span class="icon-styles spacing remove-blue"><a href="https://www.instagram.com/sharanya_latha" target="_blank"><i class="fa fa-instagram"></i></a> </span>
+        <span class="icon-styles spacing remove-blue"><a href="https://github.com/Sharanyalatha" target="_blank"> <i class="fa fa-github"></i></a></span>
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
